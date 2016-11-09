@@ -1,0 +1,29 @@
+/**
+ * Controls
+ */
+
+.button
+{
+    margin-bottom: 15px;
+    padding: 8px 20px;
+
+    color: white;
+    border: none;
+    background: #00aaff;
+}
+
+.control
+{
+    line-height: 34px;
+
+    height: 34px;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0 10px;
+
+    border: 1px solid #cccccc;
+    .form-control &
+    {
+        width: 100%;
+    }
+}
