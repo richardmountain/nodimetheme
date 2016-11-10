@@ -6,26 +6,32 @@
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			<div class="row post">
+			<article class="row page-post">
 
 				<div class="col-md-7  col-md-offset-3  ">
 
+					<header>
 
-				<div class="row">
+						<div class="row">
 
-					<div class="text-center">
+							<div class="text-center">
 
-						<h1><?php the_title(); ?></h1>
+								<h1 class="post-title"><?php the_title(); ?></h1>
 
-					</div>
+							</div>
 
-				</div>
+						</div>
 
-				<div class="row">
+						<div class="row">
 
-					<h4><?php the_time('F j, Y'); ?> <a href="<?php print get_post_permalink( $post->ID ); ?>#respond">Leave a Comment</a></h4>
+							<ul class="metadata clearfix">
+								<li class="meta_date"><?php the_time('F j, Y'); ?></li>
+								<li class="meta_author">By <a href="<?php print get_author_posts_url(get_the_author_meta('id')); ?>"><?php print get_the_author_meta( 'display_name' ); ?></a></li>
+							</ul>
 
-				</div>
+						</div>
+
+					</header>
 
 					<div class="row">
 						
@@ -41,7 +47,7 @@
 
 				</div>
 
-			</div>
+			</article>
 
 			<?php endwhile; else: ?>
 

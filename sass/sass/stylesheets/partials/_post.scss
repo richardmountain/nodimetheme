@@ -61,3 +61,91 @@
     	line-height: 1.42857143;
 	}
 }
+
+.page-post {
+	.post-title {
+		text-align: center;
+		font-size: 58px;
+		margin-bottom: 15px;
+	}
+
+	.metadata {
+		text-align: center;
+		margin-bottom: 30px;
+
+		li {
+			list-style: none;
+		    line-height: 1.4em;
+		    margin: 0;
+		    margin-bottom: 5px;
+		    margin-right: 1.78571428571429em;
+		    padding: 0;
+		    display: inline-block;
+		    position: relative;
+		    color: #c7c7c7;
+		    font-weight: bold;
+		    text-transform: uppercase;
+		    font-size: 12px;
+		}
+	}
+
+	ul li.meta_date {
+		float: left;
+	}
+
+	ul li.meta_author {
+		float: left;
+
+		a {
+			color: #999;
+		}
+	}
+}
+
+/**
+ * Comments
+ */
+.comments-title {
+	color: #c7c7c7;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.commentlist {
+	padding: 0;
+}
+
+.comment {
+	background: rgba(0,0,0,0.02);
+	list-style: none;
+	margin: 25px 0;  
+	padding: 15px;
+
+	.avatar {
+		display: inline-block;
+		margin-right: 25px;
+	}
+
+	cite.fn {
+		color: #383838;
+		font-style: normal;
+		text-transform: uppercase
+	}
+
+	.comment-author {
+		background: rgba(0,0,0,0.02);
+		margin-bottom: 10px;
+	}
+
+}
+
+//- Remove from page
+.says {
+	.comment & {
+		display: none;
+	}
+}
+
+#comments {
+	display: none;
+}

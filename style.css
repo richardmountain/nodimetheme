@@ -9480,3 +9480,91 @@ h1 {
   font-size: 16px;
   line-height: 1.42857143;
 }
+
+/* line 66, sass/sass/stylesheets/partials/_post.scss */
+.page-post .post-title {
+  text-align: center;
+  font-size: 58px;
+  margin-bottom: 15px;
+}
+/* line 72, sass/sass/stylesheets/partials/_post.scss */
+.page-post .metadata {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 76, sass/sass/stylesheets/partials/_post.scss */
+.page-post .metadata li {
+  list-style: none;
+  line-height: 1.4em;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-right: 1.78571428571429em;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  color: #c7c7c7;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+/* line 92, sass/sass/stylesheets/partials/_post.scss */
+.page-post ul li.meta_date {
+  float: left;
+}
+/* line 96, sass/sass/stylesheets/partials/_post.scss */
+.page-post ul li.meta_author {
+  float: left;
+}
+/* line 99, sass/sass/stylesheets/partials/_post.scss */
+.page-post ul li.meta_author a {
+  color: #999;
+}
+
+/**
+ * Comments
+ */
+/* line 108, sass/sass/stylesheets/partials/_post.scss */
+.comments-title {
+  color: #c7c7c7;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 114, sass/sass/stylesheets/partials/_post.scss */
+.commentlist {
+  padding: 0;
+}
+
+/* line 118, sass/sass/stylesheets/partials/_post.scss */
+.comment {
+  background: rgba(0, 0, 0, 0.02);
+  list-style: none;
+  margin: 25px 0;
+  padding: 15px;
+}
+/* line 124, sass/sass/stylesheets/partials/_post.scss */
+.comment .avatar {
+  display: inline-block;
+  margin-right: 25px;
+}
+/* line 129, sass/sass/stylesheets/partials/_post.scss */
+.comment cite.fn {
+  color: #383838;
+  font-style: normal;
+  text-transform: uppercase;
+}
+/* line 135, sass/sass/stylesheets/partials/_post.scss */
+.comment .comment-author {
+  background: rgba(0, 0, 0, 0.02);
+  margin-bottom: 10px;
+}
+
+/* line 144, sass/sass/stylesheets/partials/_post.scss */
+.comment .says {
+  display: none;
+}
+
+/* line 149, sass/sass/stylesheets/partials/_post.scss */
+#comments {
+  display: none;
+}
