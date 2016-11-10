@@ -1,0 +1,57 @@
+/**
+ * Header
+ */
+
+.site-header {
+
+	height: 100px;
+
+	margin-bottom: 50px;
+
+}
+
+.page-title {
+	h1 {
+			margin-bottom: 0;
+
+		a {
+		    font-size: 30px;
+		    color: $anchor-color;
+			font-weight: bold;
+		    -webkit-transition: all 400ms ease-in-out;
+		    -o-transition: all 400ms ease-in-out;
+		    transition: all 400ms ease-in-out;
+		    text-transform: uppercase;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	p {
+		color: $anchor-color;
+		opacity: 0.5;
+		font-size: 13px;
+		font-style: italic;
+	}
+}
+
+.navbar-nav {
+	.menu-item {
+		a {
+			font-size: 14px;
+			text-transform: uppercase;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.03);
+				text-decoration: none;
+				font-size: 14px;
+				text-transform: uppercase;
+				-webkit-transition: all 200ms ease-in-out;
+				-o-transition: all 200ms ease-in-out;
+				transition: all 200ms ease-in-out;
+			}
+		}
+	}
+}

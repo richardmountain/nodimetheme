@@ -270,8 +270,8 @@
     > li {
       float: left;
       > a {
-        padding-top:    $navbar-padding-vertical;
-        padding-bottom: $navbar-padding-vertical;
+        margin-top:    $navbar-padding-vertical;
+        margin-bottom: $navbar-padding-vertical;
       }
     }
   }
@@ -415,27 +415,27 @@
     > li > a {
       color: $navbar-default-link-color;
 
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-hover-color;
-        background-color: $navbar-default-link-hover-bg;
-      }
-    }
-    > .active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-active-color;
-        background-color: $navbar-default-link-active-bg;
-      }
-    }
-    > .disabled > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-disabled-color;
-        background-color: $navbar-default-link-disabled-bg;
-      }
+  //     &:hover,
+  //     &:focus {
+  //       color: $navbar-default-link-hover-color;
+  //       background-color: $navbar-default-link-hover-bg;
+  //     }
+  //   }
+  //   > .active > a {
+  //     &,
+  //     &:hover,
+  //     &:focus {
+  //       color: $navbar-default-link-active-color;
+  //       background-color: $navbar-default-link-active-bg;
+  //     }
+  //   }
+  //   > .disabled > a {
+  //     &,
+  //     &:hover,
+  //     &:focus {
+  //       color: $navbar-default-link-disabled-color;
+  //       background-color: $navbar-default-link-disabled-bg;
+  //     }
     }
   }
 

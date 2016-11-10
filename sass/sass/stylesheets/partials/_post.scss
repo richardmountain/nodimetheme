@@ -1,0 +1,63 @@
+/**
+ * Post
+ */
+
+.metadata {
+	h4 {
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+
+		a {
+			color: #b3b3b3;
+			font-size: 100%;
+			font-weight: normal;
+			padding-left: 10px;
+		}
+	}
+}
+
+.post {
+	opacity: 0;
+	-webkit-transform: translate(0, 50px);
+	-ms-transform: translate(0, 50px);
+	-o-transform: translate(0, 50px);
+	transform: translate(0, 50px);
+	-webkit-transition: opacity 600ms, transform 600ms;
+	-o-transition: opacity 600ms, transform 600ms;
+	transition: opacity 600ms, transform 600ms;
+
+	.pace-done & {
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		-o-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+
+	@for $i from 1 through 15 {
+		&:nth-child(#{$i}) {
+			$time: $i * 200;
+			-webkit-transition-delay: #{$time}ms;
+			transition-delay: #{$time}ms;
+		}
+	}
+
+	margin-bottom: 150px;
+
+	h1 {
+		font-weight: bold;
+		margin-bottom: 0;
+		margin-top: 0;
+
+		a {
+			color: $anchor-color;
+		}
+	}
+
+	p {
+		color: #8c8c8c;
+		font-size: 16px;
+    	line-height: 1.42857143;
+	}
+}
