@@ -2246,26 +2246,26 @@ h1 { font-size: 36px; }
 
 .main-content { margin-bottom: 30px; }
 
-.post { opacity: 0; -webkit-transform: translate(0, 50px); -ms-transform: translate(0, 50px); -o-transform: translate(0, 50px); transform: translate(0, 50px); -webkit-transition: opacity 600ms, transform 600ms; -o-transition: opacity 600ms, transform 600ms; transition: opacity 600ms, transform 600ms; margin-bottom: 150px; }
-.pace-done .post { opacity: 1; -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
-.post:nth-child(1) { -webkit-transition-delay: 200ms; transition-delay: 200ms; }
-.post:nth-child(2) { -webkit-transition-delay: 400ms; transition-delay: 400ms; }
-.post:nth-child(3) { -webkit-transition-delay: 600ms; transition-delay: 600ms; }
-.post:nth-child(4) { -webkit-transition-delay: 800ms; transition-delay: 800ms; }
-.post:nth-child(5) { -webkit-transition-delay: 1000ms; transition-delay: 1000ms; }
-.post:nth-child(6) { -webkit-transition-delay: 1200ms; transition-delay: 1200ms; }
-.post:nth-child(7) { -webkit-transition-delay: 1400ms; transition-delay: 1400ms; }
-.post:nth-child(8) { -webkit-transition-delay: 1600ms; transition-delay: 1600ms; }
-.post:nth-child(9) { -webkit-transition-delay: 1800ms; transition-delay: 1800ms; }
-.post:nth-child(10) { -webkit-transition-delay: 2000ms; transition-delay: 2000ms; }
-.post:nth-child(11) { -webkit-transition-delay: 2200ms; transition-delay: 2200ms; }
-.post:nth-child(12) { -webkit-transition-delay: 2400ms; transition-delay: 2400ms; }
-.post:nth-child(13) { -webkit-transition-delay: 2600ms; transition-delay: 2600ms; }
-.post:nth-child(14) { -webkit-transition-delay: 2800ms; transition-delay: 2800ms; }
-.post:nth-child(15) { -webkit-transition-delay: 3000ms; transition-delay: 3000ms; }
-.post h1 { font-weight: bold; margin-bottom: 0; margin-top: 0; }
-.post h1 a { color: #383838; }
-.post p { color: #8c8c8c; font-size: 16px; line-height: 1.42857143; }
+.post, .page-post { opacity: 0; -webkit-transform: translate(0, 50px); -ms-transform: translate(0, 50px); -o-transform: translate(0, 50px); transform: translate(0, 50px); -webkit-transition: opacity 600ms, transform 600ms; -o-transition: opacity 600ms, transform 600ms; transition: opacity 600ms, transform 600ms; margin-bottom: 150px; }
+.pace-done .post, .pace-done .page-post { opacity: 1; -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
+.post:nth-child(1), .page-post:nth-child(1) { -webkit-transition-delay: 200ms; transition-delay: 200ms; }
+.post:nth-child(2), .page-post:nth-child(2) { -webkit-transition-delay: 400ms; transition-delay: 400ms; }
+.post:nth-child(3), .page-post:nth-child(3) { -webkit-transition-delay: 600ms; transition-delay: 600ms; }
+.post:nth-child(4), .page-post:nth-child(4) { -webkit-transition-delay: 800ms; transition-delay: 800ms; }
+.post:nth-child(5), .page-post:nth-child(5) { -webkit-transition-delay: 1000ms; transition-delay: 1000ms; }
+.post:nth-child(6), .page-post:nth-child(6) { -webkit-transition-delay: 1200ms; transition-delay: 1200ms; }
+.post:nth-child(7), .page-post:nth-child(7) { -webkit-transition-delay: 1400ms; transition-delay: 1400ms; }
+.post:nth-child(8), .page-post:nth-child(8) { -webkit-transition-delay: 1600ms; transition-delay: 1600ms; }
+.post:nth-child(9), .page-post:nth-child(9) { -webkit-transition-delay: 1800ms; transition-delay: 1800ms; }
+.post:nth-child(10), .page-post:nth-child(10) { -webkit-transition-delay: 2000ms; transition-delay: 2000ms; }
+.post:nth-child(11), .page-post:nth-child(11) { -webkit-transition-delay: 2200ms; transition-delay: 2200ms; }
+.post:nth-child(12), .page-post:nth-child(12) { -webkit-transition-delay: 2400ms; transition-delay: 2400ms; }
+.post:nth-child(13), .page-post:nth-child(13) { -webkit-transition-delay: 2600ms; transition-delay: 2600ms; }
+.post:nth-child(14), .page-post:nth-child(14) { -webkit-transition-delay: 2800ms; transition-delay: 2800ms; }
+.post:nth-child(15), .page-post:nth-child(15) { -webkit-transition-delay: 3000ms; transition-delay: 3000ms; }
+.post h1, .page-post h1 { font-weight: bold; margin-bottom: 0; margin-top: 0; }
+.post h1 a, .page-post h1 a { color: #383838; }
+.post p, .page-post p { color: #8c8c8c; font-size: 16px; line-height: 1.42857143; }
 
 .page-post .post-title { text-align: center; font-size: 58px; margin-bottom: 15px; }
 .page-post .metadata { text-align: center; width: 50%; padding: 0; margin: auto; margin-bottom: 30px; }
