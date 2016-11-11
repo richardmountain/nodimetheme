@@ -33,7 +33,7 @@
 
 					</header>
 
-					<div class="row">
+					<div class="row  main-content">
 						
 						<?php the_content(); ?>
 
