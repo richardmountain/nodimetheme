@@ -9491,8 +9491,11 @@ h1 {
 .page-post .metadata {
   text-align: center;
   margin-bottom: 30px;
+  width: 50%;
+  padding: 0;
+  margin: auto;
 }
-/* line 76, sass/sass/stylesheets/partials/_post.scss */
+/* line 79, sass/sass/stylesheets/partials/_post.scss */
 .page-post .metadata li {
   list-style: none;
   line-height: 1.4em;
@@ -9507,15 +9510,15 @@ h1 {
   text-transform: uppercase;
   font-size: 12px;
 }
-/* line 92, sass/sass/stylesheets/partials/_post.scss */
+/* line 95, sass/sass/stylesheets/partials/_post.scss */
 .page-post ul li.meta_date {
   float: left;
 }
-/* line 96, sass/sass/stylesheets/partials/_post.scss */
+/* line 99, sass/sass/stylesheets/partials/_post.scss */
 .page-post ul li.meta_author {
   float: left;
 }
-/* line 99, sass/sass/stylesheets/partials/_post.scss */
+/* line 102, sass/sass/stylesheets/partials/_post.scss */
 .page-post ul li.meta_author a {
   color: #999;
 }
@@ -9523,48 +9526,163 @@ h1 {
 /**
  * Comments
  */
-/* line 108, sass/sass/stylesheets/partials/_post.scss */
+/* line 111, sass/sass/stylesheets/partials/_post.scss */
 .comments-title {
   color: #c7c7c7;
   font-size: 14px;
   font-weight: bold;
 }
 
-/* line 114, sass/sass/stylesheets/partials/_post.scss */
+/* line 117, sass/sass/stylesheets/partials/_post.scss */
 .commentlist {
   padding: 0;
 }
 
-/* line 118, sass/sass/stylesheets/partials/_post.scss */
+/* line 121, sass/sass/stylesheets/partials/_post.scss */
 .comment {
   background: rgba(0, 0, 0, 0.02);
+  border: 1px solid #eee;
   list-style: none;
   margin: 25px 0;
   padding: 15px;
 }
-/* line 124, sass/sass/stylesheets/partials/_post.scss */
+/* line 128, sass/sass/stylesheets/partials/_post.scss */
 .comment .avatar {
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 15px;
 }
-/* line 129, sass/sass/stylesheets/partials/_post.scss */
+/* line 133, sass/sass/stylesheets/partials/_post.scss */
 .comment cite.fn {
   color: #383838;
   font-style: normal;
   text-transform: uppercase;
 }
-/* line 135, sass/sass/stylesheets/partials/_post.scss */
+/* line 137, sass/sass/stylesheets/partials/_post.scss */
+.comment cite.fn a.url {
+  color: #383838;
+}
+/* line 142, sass/sass/stylesheets/partials/_post.scss */
 .comment .comment-author {
   background: rgba(0, 0, 0, 0.02);
+  border-bottom: 1px solid #eee;
+  margin: -15px;
   margin-bottom: 10px;
+  padding: 15px;
+}
+/* line 150, sass/sass/stylesheets/partials/_post.scss */
+.comment .comment-meta,
+.comment .comment-reply-link {
+  list-style: none;
+  line-height: 1.4em;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  display: block;
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+/* line 163, sass/sass/stylesheets/partials/_post.scss */
+.comment .comment-meta a,
+.comment .comment-reply-link a {
+  color: #383838;
+}
+/* line 168, sass/sass/stylesheets/partials/_post.scss */
+.comment a.comment-edit-link {
+  float: right;
+}
+/* line 172, sass/sass/stylesheets/partials/_post.scss */
+.comment a.comment-edit-link,
+.comment a.comment-reply-link {
+  color: rgba(255, 0, 0, 0.3);
+  text-align: right;
+  -webkit-transition: color 600ms;
+  -o-transition: color 600ms;
+  transition: color 600ms;
+}
+/* line 179, sass/sass/stylesheets/partials/_post.scss */
+.comment a.comment-edit-link:hover,
+.comment a.comment-reply-link:hover {
+  color: red;
+  text-decoration: none;
 }
 
-/* line 144, sass/sass/stylesheets/partials/_post.scss */
+/* line 187, sass/sass/stylesheets/partials/_post.scss */
+#comments,
+.comment-reply-title {
+  line-height: 1.4em;
+  margin: 0;
+  margin-bottom: -15px;
+  margin-right: 1.78571428571429em;
+  padding: 0;
+  color: #c7c7c7;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* line 200, sass/sass/stylesheets/partials/_post.scss */
+.comment-reply-title {
+  margin: 0;
+}
+
+/* line 204, sass/sass/stylesheets/partials/_post.scss */
+.comment-form {
+  opacity: 0.3;
+  -webkit-transition: opacity 600ms;
+  -o-transition: opacity 600ms;
+  transition: opacity 600ms;
+}
+/* line 210, sass/sass/stylesheets/partials/_post.scss */
+.comment-form:hover, .comment-form:active, .comment-form.focused {
+  opacity: 1;
+}
+
+/* line 216, sass/sass/stylesheets/partials/_post.scss */
+.logged-in-as a {
+  color: rgba(255, 0, 0, 0.5);
+  -webkit-transition: color 600ms;
+  -o-transition: color 600ms;
+  transition: color 600ms;
+}
+/* line 221, sass/sass/stylesheets/partials/_post.scss */
+.logged-in-as a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/* line 228, sass/sass/stylesheets/partials/_post.scss */
+.comment-form-comment label {
+  display: block;
+  line-height: 1.4em;
+  margin: 0;
+  margin-bottom: -15px;
+  margin-right: 1.78571428571429em;
+  padding: 0;
+  color: #c7c7c7;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+/* line 241, sass/sass/stylesheets/partials/_post.scss */
+.comment-form-comment textarea {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* line 248, sass/sass/stylesheets/partials/_post.scss */
+.form-submit .submit {
+  border: 1px solid #eee;
+  padding: 10px;
+  background: #383838;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 260, sass/sass/stylesheets/partials/_post.scss */
 .comment .says {
-  display: none;
-}
-
-/* line 149, sass/sass/stylesheets/partials/_post.scss */
-#comments {
   display: none;
 }

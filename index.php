@@ -24,10 +24,10 @@
 
 						<div class="row">
 
-							<ul class="metadata clearfix">
-								<li class="meta_date"><?php the_time('F j, Y'); ?></li>
-								<li class="meta_author">By <a href="<?php print get_author_posts_url(get_the_author_meta('id')); ?>"><?php print get_the_author_meta( 'display_name' ); ?></a></li>
-							</ul>
+							<div class="metadata clearfix  text-center">
+								<div class="meta_date"><?php the_time('F j, Y'); ?></div>
+								<div class="meta_author">By <a href="<?php print get_author_posts_url(get_the_author_meta('id')); ?>"><?php print get_the_author_meta( 'display_name' ); ?></a></div>
+							</div>
 
 						</div>
 
