@@ -1,20 +1,22 @@
-/*!
-Theme Name: nodime
-Theme URI: http://underscores.me/
+/*
+Theme Name: No Dime Theme
+Theme URI: http://nodi.me
 Author: Richard Mountain
-Author URI: http://richardmountain.me
-Description: Built for my Game Developer website
-Version: 1.0.0
+Author URI: http://richardmountain.me/
+Description: 
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: nodime
-Template: _tk
-Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-@import 'vendors/vendors',
-		'modules/modules',
-		'partials/partials';
+// Third-party
+@import 'stylesheets/vendor/_vendors';
+
+// Modules and Variables
+@import 'stylesheets/modules/_modules';
+
+// Partials
+@import 'stylesheets/partials/_partials';

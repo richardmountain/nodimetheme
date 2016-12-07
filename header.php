@@ -1,79 +1,66 @@
-<?php
-/**
- * The Header for our theme.
- *
- * Displays all of the <head> section and everything up till <div id="main">
- *
- * @package _tk
- */
-?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title><?php the_title(); ?> | <?php print get_bloginfo(); ?> - <?php print get_bloginfo('description'); ?></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+        <?php wp_head(); ?>
+    </head>
+    <body>
 
-	<?php wp_head(); ?>
-</head>
+        <!-- Header -->
+        <header class="site-header">
 
-<body <?php body_class(); ?>>
-	<?php do_action( 'before' ); ?>
+            <div class="container">
 
-	<nav class="site-navigation">
-	<?php // substitute the class "container-fluid" below if you want a wider content area ?>
-		<div class="container">
-			<div class="row">
-				<div class="site-navigation-inner col-sm-12">
-					<div class="navbar navbar-default">
-						<div class="navbar-header">
-							<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-								<span class="sr-only"><?php _e('Toggle navigation','_tk') ?> </span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-		
-							<!-- Your site title as branding in the menu -->
-							<?php $header_image = get_header_image();
-							if ( ! empty( $header_image ) ) { ?>
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-									<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
-								</a>
-							<?php } else { // end if ( ! empty( $header_image ) ) ?>
-							<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-							<?php } ?>
-						</div>
+                <div class="row">
 
-						<!-- The WordPress Menu goes here -->
-						<?php wp_nav_menu(
-							array(
-								'theme_location' 	=> 'primary',
-								'depth'             => 2,
-								'container'         => 'div',
-								'container_id'      => 'navbar-collapse',
-								'container_class'   => 'collapse navbar-collapse',
-								'menu_class' 		=> 'nav navbar-nav navbar-right',
-								'fallback_cb' 		=> 'wp_bootstrap_navwalker::fallback',
-								'menu_id'			=> 'main-menu',
-								'walker' 			=> new wp_bootstrap_navwalker()
-							)
-						); ?>
+                    <div class="col-md-5  col-md-offset-1">
+                        <div class="page-title">
+                            <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php print get_bloginfo(); ?></a></h1>
+                            <p><?php print get_bloginfo('description'); ?></p>
+                        </div>
+                    </div>
 
-					</div><!-- .navbar -->
-				</div>
-			</div>
-		</div><!-- .container -->
-	</nav><!-- .site-navigation -->
+                    <div class="col-md-5">
+                        <nav class="navbar navbar-default" role="navigation">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <?php
+                                    wp_nav_menu( array(
+                                        'menu'              => 'primary',
+                                        'theme_location'    => 'primary',
+                                        'depth'             => 2,
+                                        'container'         => 'div',
+                                        'container_class'   => 'collapse navbar-collapse',
+                                        'container_id'      => 'bs-example-navbar-collapse-1',
+                                        'menu_class'        => 'nav navbar-nav  navbar-right',
+                                        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                                        'walker'            => new wp_bootstrap_navwalker())
+                                    );
+                                ?>
+                            </div>
 
-<div class="main-content">
-<?php // substitute the class "container-fluid" below if you want a wider content area ?>
-	<div class="container">
-		<div class="row">
-			<div id="content" class="main-content-inner col-sm-12 <?php if ( is_blog() ) { echo 'col-md-8'; } ?>">
+                        </nav>
 
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>

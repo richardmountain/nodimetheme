@@ -1,41 +1,60 @@
-<?php
-/**
- * The main template file.
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package _tk
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<div id="main">
 
-	<?php if ( have_posts() ) : ?>
+	<div id="content" class="container">
 
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			<?php
-				/* Include the Post-Format-specific template for the content.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'content', get_post_format() );
-			?>
+			<article class="row page-post">
 
-		<?php endwhile; ?>
+				<div class="col-md-7  col-md-offset-3  ">
 
-		<?php // _tk_content_nav( 'nav-below' ); ?>
-        <?php _tk_pagination(); ?>
+					<header>
 
-	<?php else : ?>
+						<div class="row">
 
-		<?php get_template_part( 'no-results', 'index' ); ?>
+							<div class="text-center">
 
-	<?php endif; ?>
+								<h1 class="post-title"><?php the_title(); ?></h1>
 
-<?php get_sidebar(); ?>
+							</div>
+
+						</div>
+
+						<div class="row">
+
+							<div class="metadata clearfix  text-center">
+								<div class="meta_date"><?php the_time('F j, Y'); ?></div>
+								<div class="meta_author">By <a href="<?php print get_author_posts_url(get_the_author_meta('id')); ?>"><?php print get_the_author_meta( 'display_name' ); ?></a></div>
+							</div>
+
+						</div>
+
+					</header>
+
+					<div class="row  main-content">
+						
+						<?php the_content(); ?>
+
+					</div>
+
+					<div class="row">
+
+						<?php comments_template(); ?>
+
+					</div>
+
+				</div>
+
+			</article>
+
+			<?php endwhile; else: ?>
+
+			<p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
+
+	</div>
+	
+</div>
+
 <?php get_footer(); ?>
