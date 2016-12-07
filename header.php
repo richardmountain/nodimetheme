@@ -21,14 +21,14 @@
 
                 <div class="row">
 
-                    <div class="col-md-5  col-md-offset-1">
+                    <div class="col-md-3  col-md-offset-1">
                         <div class="page-title">
                             <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php print get_bloginfo(); ?></a></h1>
                             <p><?php print get_bloginfo('description'); ?></p>
                         </div>
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-md-7">
                         <nav class="navbar navbar-default" role="navigation">
                             <div class="container-fluid">
                                 <!-- Brand and toggle get grouped for better mobile display -->
