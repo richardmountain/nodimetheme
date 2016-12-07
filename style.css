@@ -8508,4 +8508,10 @@ h1 {
 .comment .says {
   display: none; }
 
+/**
+ * Media
+ */
+img {
+  margin-bottom: 35px; }
+
 /*# sourceMappingURL=style.css.map */
