@@ -8,7 +8,7 @@
 
 			<article class="row page-post">
 
-				<div class="col-md-7  col-md-offset-3  ">
+				<div class="col-md-8  col-md-offset-2  ">
 
 					<header>
 
