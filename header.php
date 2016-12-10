@@ -24,7 +24,7 @@
                     <div class="col-md-3  col-md-offset-1">
                         <?php if ( get_header_image() ) : ?>
                             <div class="page-title">
-                                <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a></h1>
+                                <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php the_custom_logo(); ?></a></h1>
                                 <p><?php print get_bloginfo('description'); ?></p>
                             </div>
                         <?php endif; ?>
