@@ -22,16 +22,12 @@
                 <div class="row">
 
                     <div class="col-md-3  col-md-offset-1">
-                        <div class="page-title">
-                        <?php
-$custom_logo_id = get_theme_mod( 'custom_logo' );
-$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-echo $image[0];
-                        ?>
-                        
-                            <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php print get_bloginfo(); ?></a></h1>
-                            <p><?php print get_bloginfo('description'); ?></p>
-                        </div>
+                        <?php if ( get_header_image() ) : ?>
+                            <div class="page-title">
+                                <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a></h1>
+                                <p><?php print get_bloginfo('description'); ?></p>
+                            </div>
+                        <?php endif; ?>
                     </div>
 
                     <div class="col-md-7">
