@@ -23,7 +23,7 @@
 
                     <div class="col-md-3  col-md-offset-1">
                         <div class="page-title">
-                            <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="<?php echo get_template_directory(); ?>/img/logo.png" alt="<?php print get_bloginfo(); ?>" /></a></h1>
+                            <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php print get_bloginfo(); ?>"  /></a></h1>
                             <p><?php print get_bloginfo('description'); ?></p>
                         </div>
                     </div>
