@@ -46,7 +46,7 @@ function dequeue_jquery_migrate( &$scripts){
  */
 function theme_prefix_setup() {
     
-    add_theme_support( 'header_image', array(
+    add_theme_support( 'custom-logo', array(
         'height'      => 100,
         'width'       => 400,
         'flex-width' => true,
