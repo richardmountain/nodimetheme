@@ -8210,6 +8210,8 @@ h1 {
     text-transform: uppercase; }
     .page-title h1 a:hover {
       text-decoration: none; }
+    .page-title h1 a img {
+      margin-bottom: 0; }
 .page-title p {
   color: #383838;
   opacity: 0.5;
