@@ -23,6 +23,12 @@
 
                     <div class="col-md-3  col-md-offset-1">
                         <div class="page-title">
+                        <?php
+$custom_logo_id = get_theme_mod( 'custom_logo' );
+$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+echo $image[0];
+                        ?>
+                        
                             <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php print get_bloginfo(); ?></a></h1>
                             <p><?php print get_bloginfo('description'); ?></p>
                         </div>

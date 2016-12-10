@@ -40,3 +40,17 @@ function dequeue_jquery_migrate( &$scripts){
 		$scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
 	}
 }
+
+/**
+ * Add logo support to theme
+ */
+function theme_prefix_setup() {
+    
+    add_theme_support( 'custom-logo', array(
+        'height'      => 100,
+        'width'       => 400,
+        'flex-width' => true,
+    ) );
+
+}
+add_action( 'after_setup_theme', 'theme_prefix_setup' );
