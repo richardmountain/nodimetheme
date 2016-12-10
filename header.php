@@ -22,12 +22,10 @@
                 <div class="row">
 
                     <div class="col-md-3  col-md-offset-1">
-                        <?php if ( get_header_image() ) : ?>
-                            <div class="page-title">
-                                <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php the_custom_logo(); ?></a></h1>
-                                <p><?php print get_bloginfo('description'); ?></p>
-                            </div>
-                        <?php endif; ?>
+                        <div class="page-title">
+                            <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="<?php echo get_template_directory(); ?>/img/logo.png" alt="<?php print get_bloginfo(); ?>" /></a></h1>
+                            <p><?php print get_bloginfo('description'); ?></p>
+                        </div>
                     </div>
 
                     <div class="col-md-7">
