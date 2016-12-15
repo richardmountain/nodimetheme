@@ -30,6 +30,19 @@
 
 					</div>
 
+					<?php if ( has_post_thumbnail() ) { ?>
+
+						<div class="row  featured-image">
+
+							<div class="col-xs-12">
+								<?php print the_post_thumbnail( 'post-thumbnails', array( 'class'  => 'img-responsive' ) ); ?>
+							</div>
+
+						</div>
+
+					<?php } ?>
+
+
 					<div class="row">
 
 						<div class="col-md-12">

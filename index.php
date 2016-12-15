@@ -37,7 +37,9 @@
 
 						<div class="row  featured-image">
 
-							<?php print the_post_thumbnail( 'post-thumbnails' ); ?>
+							<div class="col-xs-12">
+								<?php print the_post_thumbnail( 'post-thumbnails', array( 'class'  => 'img-responsive' ) ); ?>
+							</div>
 
 						</div>
 
