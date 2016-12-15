@@ -33,6 +33,16 @@
 
 					</header>
 
+					<?php if ( has_post_thumbnail() ) { ?>
+
+						<div class="row  featured-image">
+
+							<?php print the_post_thumbnail( 'post-thumbnails' ); ?>
+
+						</div>
+
+					<?php } ?>
+
 					<div class="row  main-content">
 						
 						<?php the_content(); ?>

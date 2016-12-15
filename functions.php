@@ -40,3 +40,9 @@ function dequeue_jquery_migrate( &$scripts){
 		$scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
 	}
 }
+
+
+/**
+ * Add featured image support
+ */
+add_theme_support('post-thumbnails');
