@@ -24,7 +24,7 @@
                     <div class="row">
 
                         <div class="col-md-12">
-                            <div class="page-title">
+                            <div class="page-title  text-center">
                                 <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php print get_bloginfo(); ?>"  /></a></h1>
                                 <p style="display: none;"><?php print get_bloginfo('description'); ?></p>
                             </div>
