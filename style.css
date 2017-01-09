@@ -8146,6 +8146,13 @@ button.close {
 /**
  * This is where all the partials are located.
  */
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none; }
+
+.navbar .navbar-collapse {
+  text-align: center; }
+
 /**
  * Structure
  */
@@ -8195,7 +8202,6 @@ h1 {
  * Header
  */
 .site-header {
-  height: 100px;
   margin-bottom: 50px; }
 
 .page-title h1 {
