@@ -23,14 +23,14 @@
 
                     <div class="row">
 
-                        <div class="col-md-3  col-md-offset-1">
+                        <div class="col-md-12">
                             <div class="page-title">
                                 <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php print get_bloginfo(); ?>"  /></a></h1>
                                 <p style="display: none;"><?php print get_bloginfo('description'); ?></p>
                             </div>
                         </div>
 
-                        <div class="col-md-7">
+                        <div class="col-md-12">
                             <nav class="navbar navbar-default" role="navigation">
                                 <div class="container-fluid">
                                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -50,7 +50,7 @@
                                         'container'         => 'div',
                                         'container_class'   => 'collapse navbar-collapse',
                                         'container_id'      => 'bs-example-navbar-collapse-1',
-                                        'menu_class'        => 'nav navbar-nav  navbar-right',
+                                        'menu_class'        => 'nav navbar-nav',
                                         'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                                         'walker'            => new wp_bootstrap_navwalker())
                                     );
