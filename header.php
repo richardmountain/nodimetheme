@@ -17,20 +17,22 @@
         <!-- Header -->
         <header class="site-header">
 
-            <div class="container">
+            <div class="jumbotron">
 
-                <div class="row">
+                <div class="container">
 
-                    <div class="col-md-3  col-md-offset-1">
-                        <div class="page-title">
-                            <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php print get_bloginfo(); ?>"  /></a></h1>
-                            <p style="display: none;"><?php print get_bloginfo('description'); ?></p>
+                    <div class="row">
+
+                        <div class="col-md-3  col-md-offset-1">
+                            <div class="page-title">
+                                <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?php print get_bloginfo(); ?>"  /></a></h1>
+                                <p style="display: none;"><?php print get_bloginfo('description'); ?></p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-7">
-                        <nav class="navbar navbar-default" role="navigation">
-                            <div class="container-fluid">
+                        <div class="col-md-7">
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="container-fluid">
                                 <!-- Brand and toggle get grouped for better mobile display -->
                                 <div class="navbar-header">
                                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -55,7 +57,9 @@
                                 ?>
                             </div>
 
-                        </nav>
+                            </nav>
+
+                        </div>
 
                     </div>
 
